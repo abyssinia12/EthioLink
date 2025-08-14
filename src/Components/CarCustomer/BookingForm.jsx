@@ -36,9 +36,7 @@ const BookingForm = ({
         onChange={(e) => setEmail(e.target.value)}
         className={classes.carcard__input}
       />
-      <button onClick={handlePay} className={classes.carcard__button}>
-        Pay
-      </button>
+     
     </div>
   );
 };
