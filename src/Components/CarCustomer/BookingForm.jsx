@@ -15,15 +15,15 @@ const BookingForm = ({
   return (
     
     <div className={classes.car_card__form}>
+      
+     
       <input
-        type="text"
-        placeholder="First Name"
-        value={firstName}
-        onChange={(e) => setFirstName(e.target.value)}
+        type="email"
+        placeholder="Email Address"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
         className={classes.carcard__input}
       />
-     
-      
       <button onClick={handlePay} className={classes.carcard__button}>
         Pay
       </button>
