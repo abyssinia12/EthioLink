@@ -1,0 +1,140 @@
+{
+  "header": {
+    "title": "Ethio-Link",
+    "subtitle": "tour and Travel",
+    "home": "Home",
+    "travelPackages": "Travel Packages",
+    "corporateServices": "Corporate Services",
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us",
+    "myBooking": "My Booking",
+    "login": "Login",
+    "logout": "Logout",
+    "hello": "Hello"
+  },
+  "tours": {
+    "all": "All",
+    "birding": "Birding Tour",
+    "cultural": "Cultural Tour",
+    "religious": "Religious Tour",
+    "wildlife": "Wildlife & Nature",
+    "photographic": "Photographic Tour"
+  },
+  "services": {
+    "hotelBooking": "Hotel Booking",
+    "carRentals": "Car Rentals"
+  },
+  "language": {
+    "english": "English",
+    "amharic": "አማርኛ"
+  },
+  "common": {
+    "user": "User"
+  },
+  "home": {
+    "whyChooseUs": {
+      "title": "Why Choose Ethio-Link Tour and Travel",
+      "expertGuides": {
+        "title": "Expert Local Guides",
+        "description": "Our guides are certified professionals with deep knowledge of local culture and history."
+      },
+      "safeSecure": {
+        "title": "Safe & Secure",
+        "description": "Your safety is our priority with 24/7 support and comprehensive travel insurance."
+      },
+      "bestPrice": {
+        "title": "Best Price Guarantee",
+        "description": "We offer competitive prices and will match any comparable offer you find."
+      },
+      "satisfaction": {
+        "title": "Satisfaction Guaranteed",
+        "description": "With thousands of satisfied customers, we ensure memorable travel experiences."
+      }
+    },
+    "popularTours": {
+      "title": "Popular Tour Packages",
+      "viewAll": "View All Packages →"
+    },
+    "specialInterest": {
+      "title": "Looking for Something Special?",
+      "subtitle": "Can't find what you're looking for? Let us create a custom tour package just for you!",
+      "button": "Click to book for special interest +",
+      "hideButton": "Hide Special Interest Form"
+    }
+  },
+  "footer": {
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "followUs": "Follow Us",
+    "newsletter": "Newsletter",
+    "subscribe": "Subscribe",
+    "emailPlaceholder": "Enter your email",
+    "copyright": "© 2024 Ethio-Link Tour and Travel. All rights reserved."
+  },
+  "forms": {
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "search": "Search",
+    "filter": "Filter",
+    "clear": "Clear",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success"
+  },
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "register": "Register",
+    "forgotPassword": "Forgot Password",
+    "resetPassword": "Reset Password",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "username": "Username",
+    "rememberMe": "Remember Me",
+    "dontHaveAccount": "Don't have an account?",
+    "alreadyHaveAccount": "Already have an account?",
+    "signUp": "Sign Up",
+    "signIn": "Sign In"
+  },
+  "booking": {
+    "bookNow": "Book Now",
+    "viewDetails": "View Details",
+    "price": "Price",
+    "duration": "Duration",
+    "departure": "Departure",
+    "return": "Return",
+    "guests": "Guests",
+    "rooms": "Rooms",
+    "checkIn": "Check In",
+    "checkOut": "Check Out",
+    "total": "Total",
+    "confirmBooking": "Confirm Booking",
+    "bookingConfirmation": "Booking Confirmation"
+  },
+  "carousel": {
+    "title": "Discover the Beauty of",
+    "highlight": "Ethiopia",
+    "subtitle": "Explore ancient history, stunning landscapes, and vibrant cultures"
+  },
+  "footer": {
+    "companyName": "Ethio-Link Tour and Travel",
+    "description": "Your trusted partner for unforgettable travel experiences in Ethiopia and beyond.",
+    "quickLinks": "Quick links",
+    "links": {
+      "home": "Home",
+      "about": "About us",
+      "destinations": "Destinations",
+      "contact": "Contact"
+    },
+    "contactInfo": "Contact info",
+    "address": "Street, Hawassa Ethiopia",
+    "phone": "+251 123 456 789",
+    "email": "info@ethio-linktourandtravel.com",
+    "rights": "All Rights Reserved."
+  }
+}

@@ -1,0 +1,749 @@
+/* home page style  */
+/* Container styles */
+.TourHome {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading */
+.TourHome h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #eae5e5;
+}
+
+/* Grid for TourCard components */
+.TourHome .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+.TourHome h1{
+  color: #F7921F;
+  font-weight: bolder;
+}
+.option{
+  /* border-color: #F7921F; */
+  border: 1px solid #F7921F;
+}
+.grid{
+  margin-top: 40px;
+}
+
+/* tour card style  */
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+
+  /* width: 420px; 
+  height: auto; 
+  margin: 1rem auto; */
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  
+}
+.cardCatagory{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.catagoryTitel h2{
+  color: #191717;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin: 0.8rem 0 0.4rem;
+  color: #262424;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #191717;
+  margin-bottom: 1rem;
+}
+
+.card a {
+  background-color: #F7921F;
+  color: rgb(253, 246, 246);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.card a:hover {
+  background-color: #0d0d0d;
+}
+
+/* Style for the select dropdown */
+.TourHome select {
+  width: 100%; /* Make it span the full width */
+  padding: 0.8rem 1rem;
+  margin-bottom: 2rem;
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 5px;
+  background-color: #fff; /* White background for the dropdown */
+  font-size: 1rem;
+  color: #555;
+  appearance: none; /* Remove default browser styling for select */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /* background-image: url('data:image/svg+xml;utf8,<svg fill="#555" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>'); Custom arrow */
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em;
+  cursor: pointer;
+}
+
+/* Style for the options within the select dropdown */
+
+/* .detailTitel{
+  color: #0f0e0e;
+  font-size: 20px;
+} */
+
+/* detail style  */
+
+.container {
+  display: flex;
+  max-width: 1500px;
+  margin: 20px auto;
+  padding: 20px;
+  gap: 30px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.leftColumn {
+  flex: 2;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.rightColumn {
+  flex: 1;
+  /* background-color: #2c3e50; Dark blue background for the booking form */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  color: #fff;
+  height: fit-content; /* Ensure it wraps its content */
+  position: sticky; /* Makes the booking form stick */
+  top: 20px; /* Distance from the top when sticky */
+}
+
+.title {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.leftColumn img {
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+.overview {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #333;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+/* Key Highlights */
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.highlightCard {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.highlightCard::before {
+  content: '•';
+  color: #F7921F;
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
+/* What's Included */
+.includedGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.includedCard {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.includedCard::before {
+  content: '•'; /* Bullet point */
+  color: #F7921F; /* Green color for the bullet */
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
+
+/* Detailed Itinerary */
+.itinerary {
+  margin-top: 20px;
+}
+
+.itineraryItem {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.itineraryItem:last-child {
+  margin-bottom: 0;
+}
+
+.itineraryItem .time {
+  font-weight: bold;
+  min-width: 80px; /* Adjust as needed */
+  text-align: center;
+  padding: 5px 10px;
+  background-color: #F7921F;
+  color: #fff;
+  border-radius: 5px;
+  margin-right: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Booking Form */
+.bookingForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.bookingForm h2 {
+  color: #101010;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #F7921F;
+  padding-bottom: 10px;
+}
+
+.bookingForm input[type="text"],
+.bookingForm input[type="email"],
+.bookingForm input[type="date"],
+.bookingForm input[type="number"] {
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #F7921F;
+  border-radius: 5px;
+  background-color: #f1efec;
+  color: #303030;
+  font-size: 1em;
+}
+
+.bookingForm input::placeholder {
+  color: #141414;
+}
+
+.bookingForm input:focus {
+  outline: none;
+  border-color: #F7921F;
+  box-shadow: 0 0 0 3px #F7921F(0, 123, 255, 0.25);
+}
+
+/* Date input specific styling for consistent look */
+.bookingForm input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1); /* Makes the calendar icon white */
+}
+.bookingForm input[type="date"] {
+  color-scheme: dark; /* For consistent date picker theme */
+}
+
+
+.bookingForm button {
+  background-color: #F7921F;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.bookingForm button:hover {
+  background-color: #1d1c1c;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px  #1d1c1c(52, 152, 219, 0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .leftColumn,
+  .rightColumn {
+    padding: 15px;
+    margin: 0;
+  }
+
+  .rightColumn {
+    position: static; /* Remove sticky behavior on smaller screens */
+    width: 100%;
+  }
+
+  .cardGrid,
+  .includedGrid {
+    grid-template-columns: 1fr; /* Stack items on smaller screens */
+  }
+
+  .leftColumn img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .bookingForm input,
+  .bookingForm button {
+    padding: 10px;
+    font-size: 1em;
+  }
+}
+
+.bookNowTitle  {
+  color: #fff;
+  margin-bottom: 5px; /* Adjust spacing */
+  border-bottom: none; /* Remove border if you want a cleaner look for this specific H2 */
+  padding-bottom: 0; /* Remove padding */
+}
+
+.bookNowSubtitle {
+  color: #ccc;
+  font-size: 0.9em;
+  margin-bottom: 20px;
+}
+
+.totalPriceContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-top: 15px;
+  border-top: 1px solid  #F7921F;
+}
+.price{
+  font-weight: bolder;
+  font-size: 1.2em;
+}
+
+.totalPriceContainer span {
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.totalPriceValue {
+  font-weight: bold;
+  color: #fff; /* Keep white for consistency with form background */
+  font-size: 1.5em !important; /* Make it stand out */
+}
+.cardGrid li{
+  color: #191717;
+}
+
+.paymentBtn{
+  background-color: #F7921F;
+  color: rgb(245, 240, 240);
+  border: none;
+  padding: 0.2rem 1rem;
+  font-size: 1.23rem;
+  border-radius: 8px;
+  cursor: pointer;
+  float: left; 
+  margin-bottom: 20px;
+ 
+}
+.paymentBtn:hover{
+  background-color: #1d1c1c;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px  #1d1c1c(52, 152, 219, 0.4);
+}
+
+/* 
+.container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.leftColumn {
+  flex: 3;
+}
+
+.rightColumn {
+  flex: 1;
+  position: sticky;
+  top: 2rem;
+}
+
+.cardGrid, .includedGrid {
+  display: grid;
+  gap: 1rem;
+}
+
+.highlightCard, .includedCard {
+  background: #cec6c6;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.itineraryItem {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.time {
+  width: 80px;
+  font-weight: bold;
+}
+
+.bookingForm {
+  background-color: #fff3e0;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bookingForm input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.bookingForm button {
+  background-color: #f7921f;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+} */
+
+/* 
+.detailTitel {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1a1818;
+  margin-bottom: 1rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.container:hover{
+  transform: translateY(-5px);
+}
+
+ .list h1 {
+  font-size: 2rem;
+  color: #1d1c1c;
+  margin-bottom: 1rem;
+}
+
+.list p {
+  font-size: 1.1rem;
+  color: #0f0e0e;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.detailbtn {
+  background-color: #F7921F;
+  color: rgb(245, 240, 240);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  border-radius: 8px;
+  cursor: pointer;
+ 
+  
+}
+
+.detailbtn:hover {
+  background-color: #1d1c1c;
+}
+
+.interstBtn{
+  background-color: #F7921F;
+  width: 50%;
+  align-items: center;
+  color: #e8e2e2;
+  font-size: 16px;
+  font-weight: bold;
+}
+.interstBtn:hover{
+  background-color: #1d1d1c;
+  color: rgb(242, 235, 235);
+}
+Booking form style 
+
+.booking_form_container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.booking_form_title {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  text-align: center;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #3498db;
+}
+
+.booking_form_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.form_group_item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.25rem;
+}
+
+.form_label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+  font-size: 0.95rem;
+}
+
+.form_label_required::after {
+  content: " *";
+  color: #e74c3c;
+}
+
+.form_input {
+  padding: 0.85rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form_input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.form_submit_button {
+  grid-column: span 2;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.95rem 1.5rem;
+  font-size: 1.05rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-top: 0.5rem;
+}
+
+.form_submit_button:hover {
+  background-color: #2980b9;
+}
+
+.form_submit_button:active {
+  transform: translateY(1px);
+}
+
+.loading_message {
+  text-align: center;
+  padding: 2rem;
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+.tour_info_banner {
+  background: linear-gradient(to right, #3498db, #2c3e50);
+  color: white;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.form_section_heading {
+  grid-column: span 2;
+  color: #2c3e50;
+  margin: 1rem 0 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+  font-size: 1.2rem;
+}
+
+.price_summary_container {
+  grid-column: span 2;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+  border-left: 4px solid #3498db;
+}
+
+.price_summary_row {
+  margin: 0.25rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price_total_row {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px dashed #ddd;
+}
+
+@media (max-width: 768px) {
+  .booking_form_grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .form_section_heading,
+  .form_submit_button,
+  .price-summary-container {
+    grid-column: span 1;
+  }
+}
+
+.form_input_invalid {
+  border-color: #e74c3c;
+}
+
+.form_input_invalid:focus {
+  box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.2);
+} */
+
+.option {
+  background-color: #fff; 
+  color: #333; 
+  padding: 0.5rem 1rem; 
+}
+
+.option:hover {
+  background-color: #f7921f; 
+  color: #fff; 
+}
+
+/* Fallback/enhanced styling for selected option (if supported by browser) */
+.TourHome select option:checked {
+    background-color: #f7921f; /* Highlight selected option */
+    color: #fff;
+}
+.TourHome select option:hover {
+  background-color: #f7921f; /* Highlight selected option */
+  color: #fff;
+}

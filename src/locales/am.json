@@ -1,0 +1,143 @@
+{
+  "header": {
+    "title": "ኢትዮ-ሊንክ",
+    "subtitle": "ቱሪዝም እና ጉዞ",
+    "home": "የመነሻ ገጽ",
+    "travelPackages": "የጉዞ ጥቅል",
+    "corporateServices": "የድርጅት አገልግሎቶች",
+    "aboutUs": "ስለ እኛ",
+    "contactUs": "አድራሻ",
+    "myBooking": "የእኔ ማስያዣ",
+    "login": "ግባ",
+    "logout": "ውጣ",
+    "hello": "ሰላም"
+  },
+  "tours": {
+    "all": "ሁሉም",
+    "birding": "የወፍ መመልከቻ ጉዞ",
+    "cultural": "የባህል ጉዞ",
+    "religious": "የሃይማኖት ጉዞ",
+    "wildlife": "የዱር እንስሳት እና ተፈጥሮ",
+    "photographic": "የፎቶግራፊ ጉዞ"
+  },
+  "services": {
+    "hotelBooking": "የሆቴል ማስያዣ",
+    "carRentals": "የመኪና ኪራይ"
+  },
+  "language": {
+    "english": "English",
+    "amharic": "አማርኛ"
+  },
+  "common": {
+    "user": "ተጠቃሚ"
+  },
+  "home": {
+    "whyChooseUs": {
+      "title": "ለምን ኢትዮ-ሊንክ ቱሪዝም እና ጉዞ እንድንመርጥ",
+      "expertGuides": {
+        "title": "የተሰለጠኑ የአካባቢ መሪዎች",
+        "description": "መሪዎቻችን የተሰለጠኑ ስራ አስፈፃሚዎች ሲሆኑ የአካባቢ ባህል እና ታሪክ ጥልቀት ያለው እውቀት አላቸው።"
+      },
+      "safeSecure": {
+        "title": "ደህንነቱ የተጠበቀ",
+        "description": "ደህንነትዎ የእኛ ቅድመ ቅንብር ሲሆን 24/7 ድጋፍ እና ሁለገብ የጉዞ ኢንሹራንስ አለን።"
+      },
+      "bestPrice": {
+        "title": "የተሻለ ዋጋ ዋስትና",
+        "description": "ውድድር ያለው ዋጋ እንሰጣለን እና ማንኛውንም ተመሳሳይ ቅናሽ እንደምንሰጥ እንረጋገጣለን።"
+      },
+      "satisfaction": {
+        "title": "የተረጋገጠ እርካታ",
+        "description": "ከሺዎች የሚቆጠሩ የተረኩ ደንበኞች ጋር ለማስታወስ የሚያስፈልግ የጉዞ ልምድ እንረጋገጣለን።"
+      }
+    },
+    "popularTours": {
+      "title": "የተለመዱ የጉዞ ጥቅሎች",
+      "viewAll": "ሁሉንም ጥቅሎች ይመልከቱ →"
+    },
+    "specialInterest": {
+      "title": "ለምን ልዩ ነገር እየፈለጉ ነው?",
+      "subtitle": "የሚፈልጉትን ማግኘት አትችሉም? ለእርስዎ ልዩ የጉዞ ጥቅል እንድንፈጥር ያድርጉን!",
+      "button": "ለልዩ ፍላጎት ለመያዝ ይጫኑ +",
+      "hideButton": "የልዩ ፍላጎት ቅጽ ያደብቁ"
+    }
+  },
+  "footer": {
+    "about": "ስለ እኛ",
+    "services": "አገልግሎቶች",
+    "contact": "አድራሻ",
+    "followUs": "ይከተሉን",
+    "newsletter": "ዜና መጽሐፍት",
+    "subscribe": "ይመዝገቡ",
+    "emailPlaceholder": "ኢሜይልዎን ያስገቡ",
+    "copyright": "© 2024 ኢትዮ-ሊንክ ቱሪዝም እና ጉዞ። ሁሉም መብቶች የተጠበቁ ናቸው።"
+  },
+  "forms": {
+    "submit": "ያስገቡ",
+    "cancel": "ያስወግዱ",
+    "save": "ያስቀምጡ",
+    "edit": "ያርትዑ",
+    "delete": "ያስወግዱ",
+    "search": "ይፈልጉ",
+    "filter": "ያጣሩ",
+    "clear": "ያጽዱ",
+    "loading": "ይጫናል...",
+    "error": "ስህተት",
+    "success": "ተሳክቷል"
+  },
+  "auth": {
+    "login": "ግባ",
+    "logout": "ውጣ",
+    "register": "ይመዝገቡ",
+    "forgotPassword": "የይለፍ ቃል ረስተዋል",
+    "resetPassword": "የይለፍ ቃል ዳግም ያዘዙ",
+    "email": "ኢሜይል",
+    "password": "የይለፍ ቃል",
+    "confirmPassword": "የይለፍ ቃል ያረጋግጡ",
+    "username": "የተጠቃሚ ስም",
+    "rememberMe": "አስታውሱኝ",
+    "dontHaveAccount": "መለያ የለዎትም?",
+    "alreadyHaveAccount": "የምትያዙ መለያ አለዎት?",
+    "signUp": "ይመዝገቡ",
+    "signIn": "ይግቡ"
+  },
+  "booking": {
+    "bookNow": "አሁን ያዙ",
+    "viewDetails": "ዝርዝሮች ይመልከቱ",
+    "price": "ዋጋ",
+    "duration": "ጊዜ",
+    "departure": "መውጫ",
+    "return": "መመለሻ",
+    "guests": "እንግዶች",
+    "rooms": "ክፍሎች",
+    "checkIn": "ግባ",
+    "checkOut": "ውጣ",
+    "total": "ጠቅላላ",
+    "confirmBooking": "የመያዣ ያረጋግጡ",
+    "bookingConfirmation": "የመያዣ ማረጋገጫ"
+  },
+  "carousel": {
+    "title": "የኢትዮጵያን ውበት ያግኙ",
+    "highlight": "ኢትዮጵያ",
+    "subtitle": "ታሪካዊ ቅርሶችን፣ አስደናቂ መንደሮችን እና ባህላዊ ባሕልን ያስሱ"
+  },
+  "footer": {
+    "companyName": "ኢትዮ-ሊንክ ቱር እና ትራቨል",
+    "description": "በኢትዮጵያ እና ከዚያ በላይ የማይረሱ የጉዞ ተሞክሮዎች የታመነ አጋርዎ።",
+    "quickLinks": "ፈጣን አገናኞች",
+    "links": {
+      "home": "መነሻ ገፅ",
+      "about": "ስለ እኛ",
+      "destinations": "መድረሻዎች",
+      "contact": "አግኙን"
+    },
+    "contactInfo": "የእውቂያ መረጃ",
+    "address": "መንገድ፣ ሀዋሳ ኢትዮጵያ",
+    "phone": "+251 123 456 789",
+    "email": "info@ethio-linktourandtravel.com",
+    "rights": "ሁሉም መብቶች ተጠብቀዋል።"
+  }
+}
+ 
+
+

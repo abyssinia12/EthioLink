@@ -1,0 +1,623 @@
+/* Base styles */
+/* .all_bookings_container {
+  padding: 32px; 
+  background-color: #f9fafb; 
+  min-height: 100vh; 
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.loading_message {
+  padding: 16px; 
+  color: #4b5563; 
+} */
+
+/* Section Header Styles */
+/* .booking_section {
+  margin-bottom: 32px; 
+}
+
+.booking_section_title {
+  font-size: 20px; 
+  font-weight: 600; 
+  color: #374151; 
+  margin-bottom: 16px; 
+  display: flex;
+  align-items: center;
+}
+
+.booking_section_title svg {
+  width: 24px; 
+  height: 24px; 
+  margin-right: 8px; 
+}
+
+.booking_section_title .section_count {
+  margin-left: 8px; 
+  font-size: 14px; 
+  font-weight: 400; 
+  color: #6b7280; 
+} */
+
+/* Icon colors */
+/* .car_icon { color: #3b82f6; } 
+.tour_icon { color: #16a34a; } 
+.hotel_icon { color: #9333ea; }  */
+
+/* Grid Layout */
+/* .booking_cards_grid {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 24px; 
+}
+
+@media (min-width: 768px) { 
+  .booking_cards_grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (min-width: 1024px) { 
+  .booking_cards_grid {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+} */
+
+/* Individual Booking Card */
+/* .booking_card {
+  background-color: #ffffff; 
+  padding: 24px; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1); shadow-md */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.booking_card_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.booking_item_title {
+  font-size: 18px; 
+  font-weight: 600; 
+  color: #1f2937;
+}
+
+.booking_detail {
+  color: #4b5563; 
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px; 
+}
+
+.booking_detail svg {
+  width: 16px; 
+  height: 16px; 
+  margin-right: 8px; 
+  color: #6b7280; 
+} */
+
+/* Status Badges */
+/* .status_badge {
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 12px; 
+  font-weight: 600; 
+  white-space: nowrap; 
+}
+
+.status_badge_confirmed, .status_badge_paid {
+  background-color: #dcfce7; 
+  color: #15803d; 
+}
+
+.status_badge_pending {
+  background-color: #fef9c3; 
+  color: #b45309; 
+}
+
+.status_badge_cancelled, .status_badge_unpaid {
+  background-color: #fee2e2; 
+  color: #b91c1c; 
+}
+
+.status_badge_default {
+  background-color: #e5e7eb; 
+  color: #4b5563; 
+}
+
+.no_bookings_message {
+    color: #6b7280; 
+    grid-column: 1 / -1; 
+    text-align: center;
+    padding: 20px;
+    border: 1px dashed #e5e7eb;
+    border-radius: 8px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
+
+/* .booking_card {
+  animation: fadeIn 0.5s ease-in-out;
+} */
+
+
+/* All.module.css */
+
+/* --- CSS Variables for Theming --- */
+:root {
+  --primary-color: #f97316; /* Tailwind orange-500 */
+  --secondary-color: #fb923c; /* Tailwind orange-400 */
+  --text-color-primary: #1f2937; /* Gray-800 */
+  --text-color-secondary: #4b5563; /* Gray-600 */
+  --text-color-light: #6b7280; /* Gray-500 */
+  --bg-light: #f9fafb; /* Gray-50 */
+  --bg-card: #ffffff; /* White */
+  --border-color: #e5e7eb; /* Gray-200 */
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Base Styles --- */
+.all_bookings_container {
+  padding: 2rem; /* p-8 */
+  background-color: var(--bg-light);
+  min-height: 100vh;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: var(--text-color-primary);
+  animation: fadeIn 0.8s ease-out; /* Main container fade-in */
+}
+
+.loading_message {
+  padding: 1rem; /* p-4 */
+  color: var(--text-color-secondary);
+  text-align: center;
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh; /* Center vertically on page */
+}
+
+/* --- Section Header Styles --- */
+.booking_section {
+  margin-bottom: 2.5rem; /* mb-10 */
+}
+
+.booking_section_title {
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 700; /* font-bold */
+  color: var(--text-color-primary);
+  margin-bottom: 1.5rem; /* mb-6 */
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* gap-3 */
+  text-transform: uppercase;
+  letter-spacing: 0.05em; /* tracking-wider */
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.75rem;
+  user-select: none; /* Prevent text selection */
+}
+
+.booking_section_title svg {
+  width: 2.5rem; /* w-10 */
+  height: 2.5rem; /* h-10 */
+  color: var(--primary-color); /* Apply primary color to icons */
+  transition: transform 0.3s ease;
+  flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+.booking_section_title:hover svg {
+  transform: scale(1.1) rotate(-5deg); /* Slight rotation on hover */
+}
+
+.booking_section_title .section_count {
+  margin-left: 0.75rem; /* ml-3 */
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 600; /* font-semibold */
+  color: var(--primary-color);
+  background-color: rgba(249, 115, 22, 0.1); /* light orange background */
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px; /* rounded-full */
+  min-width: 2.5rem; /* Ensure consistent size */
+  text-align: center;
+}
+
+/* --- Grid Layout for Cards --- */
+.booking_cards_grid {
+  display: grid;
+  grid-template-columns: 1fr; /* grid-cols-1 */
+  gap: 1.5rem; /* gap-6 */
+}
+
+@media (min-width: 768px) { /* md: */
+  .booking_cards_grid {
+    grid-template-columns: repeat(2, 1fr); /* md:grid-cols-2 */
+  }
+}
+
+@media (min-width: 1024px) { /* lg: */
+  .booking_cards_grid {
+    grid-template-columns: repeat(3, 1fr); /* lg:grid-cols-3 */
+  }
+}
+
+@media (min-width: 1280px) { /* xl: */
+  .booking_cards_grid {
+    grid-template-columns: repeat(4, 1fr); /* xl:grid-cols-4 */
+  }
+}
+
+/* --- Individual Booking Card --- */
+.booking_card {
+  background-color: var(--bg-card);
+  padding: 1.5rem; /* p-6 */
+  border-radius: 0.75rem; /* rounded-xl */
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  border: 1px solid var(--border-color);
+  overflow: hidden; /* Ensures shadow doesn't clip */
+  animation: fadeIn 0.6s ease-in-out forwards; /* Apply animation to individual cards 
+  */
+  transform: translateY(-2px);
+}
+
+.booking_card:hover {
+  transform: translateY(-8px) rotate(1deg); /* More pronounced lift and slight rotation */
+  box-shadow: var(--shadow-lg);
+  background-color: #fcfcfc; /* Slightly lighter on hover */
+  border-color: var(--secondary-color); /* Highlight border on hover */
+}
+
+.booking_card_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem; /* mb-3 */
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed var(--border-color);
+}
+
+.booking_item_title {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 700; /* font-bold */
+  color: var(--text-color-primary);
+  line-height: 1.3;
+  flex-grow: 1; /* Allows it to take available space */
+  margin-right: 0.5rem; /* Space between title and badge */
+}
+
+.booking_detail {
+  color: var(--text-color-secondary);
+  font-size: 0.9375rem; /* ~15px */
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.4rem; /* Adjusted for better spacing */
+  line-height: 1.4;
+}
+
+.booking_detail svg {
+  width: 1rem; /* w-4 */
+  height: 1rem; /* h-4 */
+  margin-right: 0.5rem; /* mr-2 */
+  color: var(--text-color-light);
+  flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+/* --- Status Badges --- */
+.status_badge {
+  padding: 0.3rem 0.75rem; /* px-3 py-1.5 */
+  border-radius: 9999px; /* rounded-full */
+  font-size: 0.75rem; /* text-xs */
+  font-weight: 700; /* font-bold */
+  white-space: nowrap;
+  text-transform: capitalize;
+  letter-spacing: 0.025em; /* tracking-wide */
+  transition: all 0.2s ease-in-out;
+  cursor: default; /* Indicate not directly interactive */
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,0.05); /* Subtle inner shadow */
+}
+
+.status_badge:hover {
+  opacity: 0.9;
+  transform: scale(1.05); /* Slight pop on hover */
+}
+
+.badge-confirmed, .badge-paid {
+  background-color: #dcfce7; /* bg-green-100 */
+  color: #15803d; /* text-green-700 */
+  border: 1px solid #a7f3d0; /* green-200 */
+}
+
+.badge-pending {
+  background-color: #fef9c3; /* bg-yellow-100 */
+  color: #b45309; /* text-yellow-700 */
+  border: 1px solid #fde047; /* yellow-200 */
+}
+
+.badge-cancelled, .badge-unpaid {
+  background-color: #fee2e2; /* bg-red-100 */
+  color: #b91c1c; /* text-red-700 */
+  border: 1px solid #fecaca; /* red-200 */
+}
+
+.badge-default {
+  background-color: #e5e7eb; /* bg-gray-100 */
+  color: var(--text-color-secondary);
+  border: 1px solid #d1d5db; /* gray-300 */
+}
+
+/* --- No Bookings Message --- */
+.no_bookings_message {
+  color: var(--text-color-light);
+  grid-column: 1 / -1; /* spans all columns in the grid */
+  text-align: center;
+  padding: 2.5rem; /* p-10 */
+  border: 2px dashed var(--border-color);
+  border-radius: 0.75rem; /* rounded-xl */
+  font-size: 1.125rem; /* text-lg */
+  background-color: var(--bg-card);
+  box-shadow: var(--shadow-md);
+  margin-top: 1rem; /* Space from the section title */
+}
+
+/* --- Keyframe Animations --- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add a subtle animation for the background if desired */
+@keyframes pulseBackground {
+  0% { background-color: #f9fafb; }
+  50% { background-color: #f0f4f8; }
+  100% { background-color: #f9fafb; }
+}
+
+/* If you want the background to gently pulse, uncomment this: */
+/* .all_bookings_container {
+  animation: fadeIn 0.8s ease-out, pulseBackground 10s infinite alternate;
+} */
+
+/* All.module.css */
+
+/* --- CSS Variables for Theming --- */
+:root {
+  --primary-color: #f97316; /* Tailwind orange-500 */
+  --secondary-color: #fb923c; /* Tailwind orange-400 */
+  --text-color-primary: #1f2937; /* Gray-800 */
+  --text-color-secondary: #4b5563; /* Gray-600 */
+  --text-color-light: #6b7280; /* Gray-500 */
+  --bg-light: #f9fafb; /* Gray-50 */
+  --bg-card: #ffffff; /* White */
+  --border-color: #e5e7eb; /* Gray-200 */
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Base Styles --- */
+.all_bookings_container {
+  padding: 2rem; /* p-8 */
+  background-color: var(--bg-light);
+  min-height: 100vh;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: var(--text-color-primary);
+  /* Removed: animation: fadeIn 0.8s ease-out; */
+}
+
+.loading_message {
+  padding: 1rem; /* p-4 */
+  color: var(--text-color-secondary);
+  text-align: center;
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh; /* Center vertically on page */
+}
+
+/* --- Section Header Styles --- */
+.booking_section {
+  margin-bottom: 2.5rem; /* mb-10 */
+}
+
+.booking_section_title {
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 700; /* font-bold */
+  color: var(--text-color-primary);
+  margin-bottom: 1.5rem; /* mb-6 */
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* gap-3 */
+  text-transform: uppercase;
+  letter-spacing: 0.05em; /* tracking-wider */
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.75rem;
+  user-select: none; /* Prevent text selection */
+}
+
+.booking_section_title svg {
+  width: 2.5rem; /* w-10 */
+  height: 2.5rem; /* h-10 */
+  color: var(--primary-color); /* Apply primary color to icons */
+  /* Removed: transition: transform 0.3s ease; */
+  flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+/* Removed: .booking_section_title:hover svg */
+
+.booking_section_title .section_count {
+  margin-left: 0.75rem; /* ml-3 */
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 600; /* font-semibold */
+  color: var(--primary-color);
+  background-color: rgba(249, 115, 22, 0.1); /* light orange background */
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px; /* rounded-full */
+  min-width: 2.5rem; /* Ensure consistent size */
+  text-align: center;
+}
+
+/* --- Grid Layout for Cards --- */
+.booking_cards_grid {
+  display: grid;
+  grid-template-columns: 1fr; /* grid-cols-1 */
+  gap: 1.5rem; /* gap-6 */
+}
+
+@media (min-width: 768px) { /* md: */
+  .booking_cards_grid {
+    grid-template-columns: repeat(2, 1fr); /* md:grid-cols-2 */
+  }
+}
+
+@media (min-width: 1024px) { /* lg: */
+  .booking_cards_grid {
+    grid-template-columns: repeat(3, 1fr); /* lg:grid-cols-3 */
+  }
+}
+
+@media (min-width: 1280px) { /* xl: */
+  .booking_cards_grid {
+    grid-template-columns: repeat(4, 1fr); /* xl:grid-cols-4 */
+  }
+}
+
+/* --- Individual Booking Card --- */
+.booking_card {
+  background-color: var(--bg-card);
+  padding: 1.5rem; /* p-6 */
+  border-radius: 0.75rem; /* rounded-xl */
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Removed: transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; */
+  border: 1px solid var(--border-color);
+  overflow: hidden; /* Ensures shadow doesn't clip */
+  /* Removed: animation: fadeIn 0.6s ease-in-out forwards; */
+}
+
+.booking_card:hover {
+  /* Removed: transform: translateY(-8px) rotate(1deg); */
+  /* Removed: background-color: #fcfcfc; */
+  border-color: var(--primary-color); /* Just a simple border color change on hover */
+  box-shadow: var(--shadow-lg); /* A slightly more prominent shadow on hover */
+}
+
+
+.booking_card_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem; /* mb-3 */
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed var(--border-color);
+}
+
+.booking_item_title {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 700; /* font-bold */
+  color: var(--text-color-primary);
+  line-height: 1.3;
+  flex-grow: 1; /* Allows it to take available space */
+  margin-right: 0.5rem; /* Space between title and badge */
+}
+
+.booking_detail {
+  color: var(--text-color-secondary);
+  font-size: 0.9375rem; /* ~15px */
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.4rem; /* Adjusted for better spacing */
+  line-height: 1.4;
+}
+
+.booking_detail svg {
+  width: 1rem; /* w-4 */
+  height: 1rem; /* h-4 */
+  margin-right: 0.5rem; /* mr-2 */
+  color: var(--text-color-light);
+  flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+/* --- Status Badges --- */
+.status_badge {
+  padding: 0.3rem 0.75rem; /* px-3 py-1.5 */
+  border-radius: 9999px; /* rounded-full */
+  font-size: 0.75rem; /* text-xs */
+  font-weight: 700; /* font-bold */
+  white-space: nowrap;
+  text-transform: capitalize;
+  letter-spacing: 0.025em; /* tracking-wide */
+  /* Removed: transition: all 0.2s ease-in-out; */
+  cursor: default; /* Indicate not directly interactive */
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,0.05); /* Subtle inner shadow */
+}
+
+/* Removed: .status_badge:hover */
+
+.badge-confirmed, .badge-paid {
+  background-color: #dcfce7; /* bg-green-100 */
+  color: #15803d; /* text-green-700 */
+  border: 1px solid #a7f3d0; /* green-200 */
+}
+
+.badge-pending {
+  background-color: #fef9c3; /* bg-yellow-100 */
+  color: #b45309; /* text-yellow-700 */
+  border: 1px solid #fde047; /* yellow-200 */
+}
+
+.badge-cancelled, .badge-unpaid {
+  background-color: #fee2e2; /* bg-red-100 */
+  color: #b91c1c; /* text-red-700 */
+  border: 1px solid #fecaca; /* red-200 */
+}
+
+.badge-default {
+  background-color: #e5e7eb; /* bg-gray-100 */
+  color: var(--text-color-secondary);
+  border: 1px solid #d1d5db; /* gray-300 */
+}
+
+/* --- No Bookings Message --- */
+.no_bookings_message {
+  color: var(--text-color-light);
+  grid-column: 1 / -1; /* spans all columns in the grid */
+  text-align: center;
+  padding: 2.5rem; /* p-10 */
+  border: 2px dashed var(--border-color);
+  border-radius: 0.75rem; /* rounded-xl */
+  font-size: 1.125rem; /* text-lg */
+  background-color: var(--bg-card);
+  box-shadow: var(--shadow-md);
+  margin-top: 1rem; /* Space from the section title */
+}
+
+/* --- Removed Keyframe Animations --- */
+/* @keyframes fadeIn { ... } */
+/* @keyframes pulseBackground { ... } */

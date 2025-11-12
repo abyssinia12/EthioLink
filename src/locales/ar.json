@@ -1,0 +1,143 @@
+{
+  "header": {
+    "title": "Ethio-Link",
+    "subtitle": "السياحة والسفر",
+    "home": "الرئيسية",
+    "travelPackages": "باقات السفر",
+    "corporateServices": "الخدمات المؤسسية",
+    "aboutUs": "معلومات عنا",
+    "contactUs": "اتصل بنا",
+    "myBooking": "حجزي",
+    "login": "تسجيل الدخول",
+    "logout": "تسجيل الخروج",
+    "hello": "مرحبا"
+  },
+  "tours": {
+    "all": "الكل",
+    "birding": "رحلة مراقبة الطيور",
+    "cultural": "رحلة ثقافية",
+    "religious": "رحلة دينية",
+    "wildlife": "الحياة البرية والطبيعة",
+    "photographic": "رحلة تصوير فوتوغرافي"
+  },
+  "services": {
+    "hotelBooking": "حجز الفندق",
+    "carRentals": "تأجير السيارات"
+  },
+  "language": {
+    "english": "English",
+    "amharic": "አማርኛ",
+    "chinese": "中文",
+    "spanish": "Español",
+    "arabic": "العربية"
+  },
+  "common": {
+    "user": "المستخدم"
+  },
+  "home": {
+    "whyChooseUs": {
+      "title": "لماذا تختار Ethio-Link السياحة والسفر",
+      "expertGuides": {
+        "title": "مرشدين محليين خبراء",
+        "description": "مرشدينا هم محترفون معتمدون لديهم معرفة عميقة بالثقافة والتاريخ المحليين."
+      },
+      "safeSecure": {
+        "title": "آمن وموثوق",
+        "description": "أمانك هو أولويتنا مع دعم 24/7 وتأمين سفر شامل."
+      },
+      "bestPrice": {
+        "title": "ضمان أفضل سعر",
+        "description": "نحن نقدم أسعاراً تنافسية وسنطابق أي عرض قابل للمقارنة تجده."
+      },
+      "satisfaction": {
+        "title": "رضا مضمون",
+        "description": "مع آلاف العملاء الراضين، نضمن تجارب سفر لا تُنسى."
+      }
+    },
+    "popularTours": {
+      "title": "باقات الرحلات الشعبية",
+      "viewAll": "عرض جميع الباقات →"
+    },
+    "specialInterest": {
+      "title": "تبحث عن شيء مميز؟",
+      "subtitle": "لا يمكنك العثور على ما تبحث عنه؟ دعنا ننشئ باقة رحلة مخصصة لك فقط!",
+      "button": "انقر للحجز للاهتمام الخاص +",
+      "hideButton": "إخفاء نموذج الاهتمام الخاص"
+    }
+  },
+  "footer": {
+    "about": "حول",
+    "services": "الخدمات",
+    "contact": "اتصال",
+    "followUs": "تابعنا",
+    "newsletter": "النشرة الإخبارية",
+    "subscribe": "اشتراك",
+    "emailPlaceholder": "أدخل بريدك الإلكتروني",
+    "copyright": "© 2024 Ethio-Link السياحة والسفر. جميع الحقوق محفوظة."
+  },
+  "forms": {
+    "submit": "إرسال",
+    "cancel": "إلغاء",
+    "save": "حفظ",
+    "edit": "تحرير",
+    "delete": "حذف",
+    "search": "بحث",
+    "filter": "تصفية",
+    "clear": "مسح",
+    "loading": "جار التحميل...",
+    "error": "خطأ",
+    "success": "نجاح"
+  },
+  "auth": {
+    "login": "تسجيل الدخول",
+    "logout": "تسجيل الخروج",
+    "register": "تسجيل",
+    "forgotPassword": "نسيت كلمة المرور",
+    "resetPassword": "إعادة تعيين كلمة المرور",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "username": "اسم المستخدم",
+    "rememberMe": "تذكرني",
+    "dontHaveAccount": "ليس لديك حساب؟",
+    "alreadyHaveAccount": "لديك حساب بالفعل؟",
+    "signUp": "تسجيل",
+    "signIn": "تسجيل الدخول"
+  },
+  "booking": {
+    "bookNow": "احجز الآن",
+    "viewDetails": "عرض التفاصيل",
+    "price": "السعر",
+    "duration": "المدة",
+    "departure": "المغادرة",
+    "return": "العودة",
+    "guests": "الضيوف",
+    "rooms": "الغرف",
+    "checkIn": "تسجيل الدخول",
+    "checkOut": "تسجيل الخروج",
+    "total": "الإجمالي",
+    "confirmBooking": "تأكيد الحجز",
+    "bookingConfirmation": "تأكيد الحجز"
+  },
+  "carousel": {
+    "title": "اكتشف جمال",
+    "highlight": "إثيوبيا",
+    "subtitle": "استكشف التاريخ العريق، المناظر الطبيعية الخلابة، والثقافات النابضة بالحياة"
+  },
+  "footer": {
+    "companyName": "إثيو-لينك للسياحة والسفر",
+    "description": "شريكك الموثوق لتجارب سفر لا تُنسى في إثيوبيا وخارجها.",
+    "quickLinks": "روابط سريعة",
+    "links": {
+      "home": "الرئيسية",
+      "about": "معلومات عنا",
+      "destinations": "الوجهات",
+      "contact": "اتصل بنا"
+    },
+    "contactInfo": "معلومات الاتصال",
+    "address": "الشارع، هواسا، إثيوبيا",
+    "phone": "+251 123 456 789",
+    "email": "info@ethio-linktourandtravel.com",
+    "rights": "جميع الحقوق محفوظة."
+  }
+}

@@ -1,0 +1,356 @@
+/* .header {
+  
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1B1A1A;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.headerTitles{
+  display: flex;
+  padding-top: 7px;
+}
+.header_first {
+  font-weight: bolder;
+  font-size: 1.55rem;
+  color: #F7921F;
+}
+.header_second{
+  padding-left: 5px;
+  font-weight: bolder;
+  font-size: 1.35rem;
+  color: #FFF;
+} */
+
+/* .nav_links {
+  display: flex;
+  align-items: center;
+  gap: 2rem; 
+  font-size: 1rem;
+}
+
+.nav_links a,
+.dropdown_button {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.2s ease;
+  background: none;
+  border: none;
+  cursor: pointer; */
+/* padding: 0; 
+  display: flex;
+  align-items: center; 
+  height: 100%;
+} */
+/* 
+.nav_links a:hover,
+.dropdown_button:hover {
+  color: #eca552;
+}
+
+.dropdown_container {
+  position: relative;
+  display: flex;
+  align-items: center;
+} */
+/* 
+.dropdown_menu {
+  position: absolute;
+  background-color: white;
+  color: black;
+  top: 100%; 
+  left: 0;
+  margin-top: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  padding: 0.5rem 0;
+  z-index: 100;
+  min-width: 200px;
+} */
+/* .dropdown_menu a{
+  
+  padding-left: 20px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  
+}
+
+.menu_item {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: black;
+  white-space: nowrap; */
+/* 
+}
+
+.menu_item:hover {
+  background-color: #f3f4f6;
+  transition: background-color 0.2s ease;
+}
+
+.login_btn {
+  background-color: #F7921F;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  width: 130px;
+  height: 45px;
+  font-size: 18px;
+  font-weight: bolder;
+  border: none;
+  color: #fff;
+  margin-left: 2rem;
+}
+
+.login_btn:hover {
+  background-color: #fff;
+  color: #1B1A1A;
+} */
+
+.header {
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1b1a1a;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  /* Add a subtle shadow to give it some depth */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.headerTitles {
+  display: flex;
+  padding-top: 7px;
+}
+
+.header_first {
+  font-weight: bolder;
+  font-size: 1.55rem;
+  color: #f7921f;
+}
+
+.header_second {
+  padding-left: 5px;
+  font-weight: bolder;
+  font-size: 1.35rem;
+  color: #fff;
+}
+
+.nav_links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1rem;
+}
+
+.nav_links a,
+.dropdown_button {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  /* Smooth transition for color and transform on hover */
+  transition: color 0.3s ease, transform 0.3s ease;
+  position: relative; /* Needed for the underline effect */
+}
+
+.nav_links a:hover,
+.dropdown_button:hover {
+  color: #eca552;
+  /* Slightly lift the item on hover */
+  transform: translateY(-2px);
+}
+
+/* Underline animation for nav links and dropdown buttons on hover */
+.nav_links a::after,
+.dropdown_button::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #eca552;
+  transition: width 0.3s ease;
+  -webkit-transition: width 0.3s ease;
+}
+
+.nav_links a:hover::after,
+.dropdown_button:hover::after {
+  width: 100%;
+  left: 0;
+  background: #eca552;
+}
+
+.dropdown_container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Dropdown menu animation */
+.dropdown_menu {
+  position: absolute;
+  background-color: white;
+  color: black;
+  top: 100%;
+  left: 0;
+  margin-top: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  padding: 0.5rem 0;
+  z-index: 100;
+  min-width: 200px;
+  /* Fade-in and slide-down animation for dropdown */
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fadeInSlideDown 0.3s forwards;
+}
+
+/* Keyframes for dropdown animation */
+@keyframes fadeInSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown_menu a {
+  padding-left: 20px;
+  /* Removed box-shadow here as it was applied to each link */
+}
+
+.menu_item {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: black;
+  white-space: nowrap;
+  /* Smooth background color transition on hover */
+  transition: background-color 0.2s ease, padding-left 0.2s ease;
+}
+
+.menu_item:hover {
+  background-color: #f3f4f6;
+  /* Slightly indent on hover for a subtle effect */
+  padding-left: 1.2rem;
+}
+
+.login_btn {
+  background-color: #f7921f;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  width: 130px;
+  height: 45px;
+  font-size: 18px;
+  font-weight: bolder;
+  border: none;
+  color: #fff;
+  margin-left: 2rem;
+  /* Smooth transition for background and color */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.login_btn:hover {
+  background-color: #fff;
+  color: #1b1a1a;
+  /* Slightly scale up the button on hover */
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* ... (previous CSS for .header, .headerTitles, .nav_links, .nav_links a, .dropdown_button, etc. remains the same) ... */
+
+.dropdown_container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* Ensure the container is a flex item */
+  height: 100%; /* Important for vertical centering */
+}
+
+/* Hide the dropdown menu by default */
+.dropdown_menu {
+  position: absolute;
+  background-color: white;
+  color: black;
+  top: 100%; /* place directly below the button */
+  left: 0;
+  margin-top: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  padding: 0.5rem 0;
+  z-index: 100;
+  min-width: 200px;
+
+  /* Initially hidden and styled for smooth transition */
+  opacity: 0;
+  visibility: hidden; /* Hide from screen readers and pointer events */
+  transform: translateY(-10px); /* Start slightly above */
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
+/* Show the dropdown menu on hover of the container */
+.dropdown_container:hover .dropdown_menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0); /* Slide into place */
+}
+
+.dropdown_menu a {
+  padding-left: 20px;
+}
+
+.menu_item {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: black;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, padding-left 0.2s ease;
+}
+
+.menu_item:hover {
+  background-color: #f3f4f6;
+  padding-left: 1.2rem;
+}
+
+/* ... (previous CSS for .login_btn remains the same) ... */
+
+/* Add these styles for the logo */
+.logo_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo_image {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  max-width: 200px;
+}

@@ -1,0 +1,397 @@
+/* package list  */
+/* .tour-list-container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tour-list-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.tour-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tour-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tour-info {
+  font-size: 1rem;
+  font-weight: 500;
+ background-color: #141b1f;
+}
+
+.tour-buttons {
+  display: flex;
+}
+
+.edit-button {
+  background-color: #3498db;
+  color: white;
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: #2980b9;
+}
+
+.delete-button {
+  background-color: #e74c3c;
+  color: white;
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+} */
+
+
+.tour_list_container {
+  padding: 2rem;
+}
+
+.tour_list_title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: bolder;
+  color: #F7921F ;
+}
+
+.card_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  height: 470px;
+  width: 340px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card_title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card_price {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.tour_buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.edit_button,
+.delete_button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.edit_button {
+  background-color: #F7921F;
+  color: white;
+  width: 150px;
+  font-size: 30px;
+}
+
+.view_button:hover{
+  background-color:  #1d1c1c; 
+}
+.edit_button:hover{
+  background-color:  #1d1c1c; 
+}
+
+.delete_button {
+  background-color: #f44336;
+  color: white;
+  width: 150px;
+}
+.delete_button:hover{
+  background-color: #ef7b72;
+}
+.view_button{
+  /* background-color: #F7921F; */
+  background-color: #feb760;
+  color: white;
+  width: 150px;
+}
+/* additiona style  */
+
+.tour_buttons {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 10px; /* Space between buttons */
+  align-items: flex-start; /* Optional: align buttons to the left */
+}
+
+.edit_button,
+.delete_button,
+.view_button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* additional style  */
+.tour_list_container {
+  padding: 2rem;
+}
+
+.tour_list_title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.card_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 3 cards per row */
+  gap: 1.5rem;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card_title {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.card_price {
+  color: #444;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.tour_buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.addBtn {
+  background-color: #F7921F;
+  color: rgb(245, 240, 240);
+  border: none;
+  padding: 0.2rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  float: left; 
+  margin-bottom: 20px;
+  text-align: right;
+  float: right;
+  margin-top: 70px;
+ 
+  /* transition: background-color 0.2s ease; */
+  
+}
+
+.addBtn:hover {
+  background-color: #1d1c1c;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px  #1d1c1c(52, 152, 219, 0.4);
+}
+
+.Backbtn {
+  background-color: #F7921F;
+  color: rgb(245, 240, 240);
+  border: none;
+  padding: 0.2rem 1rem;
+  font-size: 1.23rem;
+  border-radius: 8px;
+  cursor: pointer;
+  float: left; 
+  margin-bottom: 20px;
+  
+}
+
+.Backbtn:hover {
+  background-color: #1d1c1c;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px  #1d1c1c(52, 152, 219, 0.4);
+}
+
+
+.pageContainer {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.headerTitle {
+  font-size: 24px;
+  color: #333;
+  font-weight: 600;
+}
+
+.totalRequests {
+  font-size: 16px;
+  color: #666;
+}
+
+.requestsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Adjust card width as needed */
+  gap: 25px;
+}
+
+.requestCard {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.requestCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.initialsCircle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #F7921F; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 15px;
+  flex-shrink: 0;
+  color: #fff;
+}
+
+/* Example for dynamic colors - you'd likely implement this in JS */
+/* .initialsCircle.color1 { background-color: #5B9BD5; } */
+/* .initialsCircle.color2 { background-color: #ED7D31; } */
+/* .initialsCircle.color3 { background-color: #70AD47; } */
+/* ... and so on for other cards */
+
+.fullName {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.cardBody {
+  margin-bottom: 20px;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 15px;
+}
+
+.infoItem:last-child {
+  margin-bottom: 0;
+}
+
+.icon {
+  width: 18px; /* Adjust icon size */
+  height: 18px;
+  margin-right: 10px;
+  vertical-align: middle;
+  filter: grayscale(80%); /* Make icons subtle */
+  opacity: 0.7;
+}
+
+.specialRequest {
+  background-color: #f9f9f9;
+  border-left: 4px solid #F7921F; /* Subtle border for the request section */
+  padding: 15px;
+  border-radius: 5px;
+  flex-grow: 1; /* Allows the request section to take available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.specialRequestTitle {
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 8px;
+  font-size: 14.5px;
+}
+
+.specialRequest p {
+  margin: 0;
+  line-height: 1.6;
+  color: #666;
+  font-size: 14px;
+}
+.spp{
+  padding-left: 10px;
+}

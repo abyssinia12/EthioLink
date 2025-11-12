@@ -1,0 +1,143 @@
+{
+  "header": {
+    "title": "Ethio-Link",
+    "subtitle": "Turismo y Viajes",
+    "home": "Inicio",
+    "travelPackages": "Paquetes de Viaje",
+    "corporateServices": "Servicios Corporativos",
+    "aboutUs": "Sobre Nosotros",
+    "contactUs": "Contáctenos",
+    "myBooking": "Mi Reserva",
+    "login": "Iniciar Sesión",
+    "logout": "Cerrar Sesión",
+    "hello": "Hola"
+  },
+  "tours": {
+    "all": "Todos",
+    "birding": "Tour de Observación de Aves",
+    "cultural": "Tour Cultural",
+    "religious": "Tour Religioso",
+    "wildlife": "Vida Silvestre y Naturaleza",
+    "photographic": "Tour Fotográfico"
+  },
+  "services": {
+    "hotelBooking": "Reserva de Hotel",
+    "carRentals": "Alquiler de Autos"
+  },
+  "language": {
+    "english": "English",
+    "amharic": "አማርኛ",
+    "chinese": "中文",
+    "spanish": "Español",
+    "arabic": "العربية"
+  },
+  "common": {
+    "user": "Usuario"
+  },
+  "home": {
+    "whyChooseUs": {
+      "title": "Por Qué Elegir Ethio-Link Turismo y Viajes",
+      "expertGuides": {
+        "title": "Guías Locales Expertos",
+        "description": "Nuestros guías son profesionales certificados con profundo conocimiento de la cultura y historia local."
+      },
+      "safeSecure": {
+        "title": "Seguro y Protegido",
+        "description": "Su seguridad es nuestra prioridad con soporte 24/7 y seguro de viaje integral."
+      },
+      "bestPrice": {
+        "title": "Garantía del Mejor Precio",
+        "description": "Ofrecemos precios competitivos y igualaremos cualquier oferta comparable que encuentre."
+      },
+      "satisfaction": {
+        "title": "Satisfacción Garantizada",
+        "description": "Con miles de clientes satisfechos, garantizamos experiencias de viaje memorables."
+      }
+    },
+    "popularTours": {
+      "title": "Paquetes de Tour Populares",
+      "viewAll": "Ver Todos los Paquetes →"
+    },
+    "specialInterest": {
+      "title": "¿Buscando Algo Especial?",
+      "subtitle": "¿No puede encontrar lo que busca? ¡Permítanos crear un paquete de tour personalizado solo para usted!",
+      "button": "Haga clic para reservar interés especial +",
+      "hideButton": "Ocultar Formulario de Interés Especial"
+    }
+  },
+  "footer": {
+    "about": "Acerca de",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "followUs": "Síganos",
+    "newsletter": "Boletín",
+    "subscribe": "Suscribirse",
+    "emailPlaceholder": "Ingrese su correo electrónico",
+    "copyright": "© 2024 Ethio-Link Turismo y Viajes. Todos los derechos reservados."
+  },
+  "forms": {
+    "submit": "Enviar",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "clear": "Limpiar",
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito"
+  },
+  "auth": {
+    "login": "Iniciar Sesión",
+    "logout": "Cerrar Sesión",
+    "register": "Registrarse",
+    "forgotPassword": "¿Olvidó su Contraseña?",
+    "resetPassword": "Restablecer Contraseña",
+    "email": "Correo Electrónico",
+    "password": "Contraseña",
+    "confirmPassword": "Confirmar Contraseña",
+    "username": "Nombre de Usuario",
+    "rememberMe": "Recordarme",
+    "dontHaveAccount": "¿No tiene una cuenta?",
+    "alreadyHaveAccount": "¿Ya tiene una cuenta?",
+    "signUp": "Registrarse",
+    "signIn": "Iniciar Sesión"
+  },
+  "booking": {
+    "bookNow": "Reservar Ahora",
+    "viewDetails": "Ver Detalles",
+    "price": "Precio",
+    "duration": "Duración",
+    "departure": "Salida",
+    "return": "Regreso",
+    "guests": "Huéspedes",
+    "rooms": "Habitaciones",
+    "checkIn": "Entrada",
+    "checkOut": "Salida",
+    "total": "Total",
+    "confirmBooking": "Confirmar Reserva",
+    "bookingConfirmation": "Confirmación de Reserva"
+  },
+  "carousel": {
+    "title": "Descubre la belleza de",
+    "highlight": "Etiopía",
+    "subtitle": "Explora la historia antigua, paisajes impresionantes y culturas vibrantes"
+  },
+  "footer": {
+    "companyName": "Ethio-Link Tour and Travel",
+    "description": "Tu socio de confianza para experiencias de viaje inolvidables en Etiopía y más allá.",
+    "quickLinks": "Enlaces rápidos",
+    "links": {
+      "home": "Inicio",
+      "about": "Sobre nosotros",
+      "destinations": "Destinos",
+      "contact": "Contacto"
+    },
+    "contactInfo": "Información de contacto",
+    "address": "Calle, Hawassa Etiopía",
+    "phone": "+251 123 456 789",
+    "email": "info@ethio-linktourandtravel.com",
+    "rights": "Todos los derechos reservados."
+  }
+}

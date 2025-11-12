@@ -1,0 +1,86 @@
+[
+  {
+    "id": "1",
+    "name": "SouthStar Hotel",
+    "location": "Hawassa",
+    "image": "/images/SouthHotel.jpg",
+    "rooms": [
+      {
+        "id": "101",
+        "type": "Single",
+        "price": 100,
+        "available": true,
+        "image": "/images/SouthBed1.jpg",
+        "room_number": "101",
+        "floor_number": 1,
+        "booking": {
+          "fullName": "aby",
+          "email": "aby@gmail.com",
+          "phone": "0912464331",
+          "tx_ref": "TX-UKIBQ3IR5NAIWNY",
+          "paid": false
+        }
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Haile resort",
+    "location": "Hawassa",
+    "image": "/images/HaileHotel.jpg",
+    "rooms": [
+      {
+        "id": "101",
+        "type": "Double",
+        "price": 100,
+        "available": true,
+        "image": "/images/HaileBed1.jpg",
+        "room_number": "101",
+        "floor_number": 1
+      },
+      {
+        "id": "102",
+        "type": "Single",
+        "price": 400,
+        "image": "/images/HaileBed1.jpg",
+        "available": true,
+        "room_number": "102",
+        "floor_number": 1
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Haile resort",
+    "location": "Hawassa",
+    "image": "/images/HaileHotel.jpg",
+    "rooms": [
+      {
+        "id": "201",
+        "type": "Double",
+        "price": 100,
+        "available": true,
+        "image": "/images/HaileBed2.jpg",
+        "room_number": "201",
+        "floor_number": 2
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Rori Hotel",
+    "location": "Hawassa",
+    "image": "/images/RoriHotel.jpg",
+    "rooms": [
+      {
+        "id": "101",
+        "type": "Double",
+        "price": 100,
+        "available": true,
+        "image": "/images/RoriBed1.jpg",
+        "room_number": "101",
+        "floor_number": 1
+      }
+    ]
+  }
+]

@@ -1,0 +1,186 @@
+/* EditTour.module.css */
+.editTourContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f7fa;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.editTourCard {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px;
+  padding: 2.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.editTourCard:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.editTourHeading {
+  color: #2c3e50;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #F7921F;
+  text-align: center;
+}
+
+.editTourForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 0px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formLabel {
+  font-weight: 600;
+  color: #34495e;
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+}
+
+.formInput {
+  padding: 0.9rem 1.2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: #fafbfc;
+}
+
+.formInput:focus {
+  outline: none;
+  border-color: #F7921F;
+  box-shadow: 0 0 0 3px  #F7921F(52, 152, 219, 0.2);
+  background-color: white;
+}
+
+.formTextarea {
+  min-height: 120px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.formSelect {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em;
+  cursor: pointer;
+}
+
+.imagePreviewContainer {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.imagePreview {
+  width: 100%;
+  max-height: 250px;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  object-fit: cover;
+  border: 1px solid #eee;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.saveButton {
+  background: #F7921F;
+  color: white;
+  border: none;
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 4px 6px  #F7921F(52, 152, 219, 0.3);
+}
+
+.saveButton:hover {
+  background: #1d1c1c;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px  #1d1c1c(52, 152, 219, 0.4);
+}
+
+.saveButton:active {
+  transform: translateY(0);
+}
+
+.loadingContainer,
+.errorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.2rem;
+  color: #F7921F;
+}
+
+.errorContainer {
+  color: #e74c3c;
+}
+.header{
+  background-color: #F7921F;
+  text-align: center;
+  height: 60px;
+  width: 800px;
+  color: #f5f7fa;
+  font-size: 30px;
+  margin-left: 500px;
+  font-weight: bolder;
+  margin-bottom: 0;
+  padding-top: 10px;
+}
+.Addheader{
+  background-color: #F7921F;
+  text-align: center;
+  height: 60px;
+  width: 800px;
+  color: #f5f7fa;
+  font-size: 30px;
+  margin-left: 350px;
+  font-weight: bolder;
+  margin-bottom: 0;
+  padding-top: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .editTourContainer {
+    padding: 1rem;
+  }
+  
+  .editTourCard {
+    padding: 1.5rem;
+  }
+  
+  .editTourHeading {
+    font-size: 1.5rem;
+  }
+  
+  .saveButton {
+    width: 100%;
+  }
+}

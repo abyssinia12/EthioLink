@@ -1,0 +1,134 @@
+/* Footer.module.css */
+
+/* Main container */
+.first {
+  padding: 1.5rem;
+  background-color: #1B1A1A;
+}
+
+/* Grid layout for larger screens */
+/* @media (min-width: 768px) {
+  div:first-child {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 5%;
+  }
+} */
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem 5%;
+  background-color: #1B1A1A;
+}
+/* Heading styles */
+.first h1 {
+  font-size: 1.8rem;
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+}
+
+.first h2 {
+  font-size: 1.4rem;
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #F7921F;
+  padding-bottom: 0.5rem;
+}
+
+/* Paragraph text */
+.first p {
+  color: #FFFFFF;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* List styling */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin-bottom: 0.8rem;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+ul li:hover {
+  color: #F7921F;
+}
+
+/* Contact info styling */
+.first > li {
+  color: #FFFFFF;
+  margin-bottom: 0.8rem;
+  font-style: normal;
+}
+
+.first i {
+  color: #F7921F;
+  margin-right: 0.5rem;
+}
+
+/* Horizontal line */
+hr {
+  border: 0;
+  border-top: 1px solid #333;
+  margin: 2rem 0;
+}
+
+/* Bottom footer */
+.footerBottom {
+  text-align: center;
+  padding: 1.5rem;
+  color: #FFFFFF;
+  font-size: 0.9rem;
+  border-top: 1px solid #333;
+  grid-column: 1 / -1;
+}
+
+/* Add divider between sections */
+.divider {
+  grid-column: 1 / -1;
+  height: 1px;
+  background-color: #333;
+  margin: 1rem 0;
+}
+
+/* Social media links */
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.socialIcon {
+  color: #F7921F;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.socialIcon:hover {
+  color: #FFFFFF;
+  transform: translateY(-3px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .first {
+    text-align: center;
+  }
+  
+  .first h2 {
+    margin-top: 1.5rem;
+  }
+  
+  ul li {
+    margin-bottom: 1rem;
+  }
+}

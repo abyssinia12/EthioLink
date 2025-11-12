@@ -1,0 +1,135 @@
+/* Tour Officer Layout Styles */
+.tour_officer_layout {
+  --sidebar-bg: rgb(22, 53, 80);
+  --sidebar-width-open: 16rem;  /* 256px */
+  --sidebar-width-closed: 5rem; /* 80px */
+  --transition-duration: 0.3s;
+}
+
+/* Mobile Overlay */
+.sidebar_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 40;
+}
+
+/* Sidebar */
+.tour_officer_sidebar {
+  position: fixed;
+  z-index: 50;
+  background-color: var(--sidebar-bg);
+  height: 100vh;
+  color: white;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  transition: all var(--transition-duration) ease;
+}
+
+.sidebar_open {
+  transform: translateX(0);
+  width: var(--sidebar-width-open);
+}
+
+.sidebar_closed {
+  transform: translateX(-100%);
+  width: var(--sidebar-width-closed);
+}
+
+/* Logo Section */
+.sidebar_logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+.sidebar_logo img {
+  transition: all var(--transition-duration) ease;
+}
+
+.logo_divider {
+  width: 50px;
+  border-top: 1px solid #4a5568;
+  margin-top: 1rem;
+}
+
+/* Navigation Links */
+.sidebar_nav {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.nav_link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  transition: all var(--transition-duration) ease;
+}
+
+.nav_link:hover {
+  background-color: #1d4ed8; /* blue-700 */
+}
+
+.nav_link.active {
+  background-color: #1e40af; /* blue-800 */
+}
+
+/* Logout Button */
+.logout_section {
+  margin-top: 1rem;
+  border-top: 1px solid #4a5568;
+  padding-top: 0.5rem;
+}
+
+.logout_button {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  width: 100%;
+  color: #60a5fa; /* red-400 */
+  transition: all var(--transition-duration) ease;
+}
+
+.logout_button:hover {
+  background-color: #b91c1c; /* red-700 */
+}
+
+/* Main Content */
+.main_content {
+  transition: margin-left var(--transition-duration) ease;
+  padding: 1rem;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .tour_officer_sidebar {
+    position: relative;
+    transform: translateX(0);
+  }
+  
+  .sidebar_closed {
+    transform: translateX(0);
+    width: var(--sidebar-width-closed);
+  }
+
+  .main_content {
+    margin-left: var(--sidebar-width-closed);
+  }
+  
+  .main_content.sidebar_open {
+    margin-left: var(--sidebar-width-open);
+  }
+}
+.item_text{
+  color: #4a5568;
+}

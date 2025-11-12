@@ -1,0 +1,489 @@
+/* ===== GLOBAL STYLES ===== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.text_right {
+  text-align: right;
+}
+
+/* ===== TOP SECTION ===== */
+.top_section {
+  position: relative;
+  min-height: 500px;
+  background: linear-gradient(to bottom, #ffffff, #f0f9ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.view_all_link {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: #f97316;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.view_all_link:hover {
+  text-decoration: underline;
+}
+
+.top_content {
+  max-width: 800px;
+  padding: 0 20px;
+  z-index: 1;
+}
+
+.top_title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.top_subtitle {
+  font-size: 1.25rem;
+  color: #4b5563;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* .special_interest_btn {
+  background: #f97316;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 6px rgba(249, 115, 22, 0.3);
+ justify-content: space-between;
+ margin-left: 690px;
+}
+
+.special_interest_btn:hover {
+  background: #ea580c;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(249, 115, 22, 0.4);
+} */
+
+/* ===== POPULAR TOURS SECTION ===== */
+.popular_tours {
+  padding: 60px 20px;
+  /* background-color: #f3f4f6; */
+  background-color: #FEF7EF;
+}
+
+.section_title {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.section_subtitle {
+  text-align: center;
+  color: #4b5563;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.tours_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 2200px;
+  margin: 0 auto 40px;
+}
+
+.view_all_container {
+    text-align: center; /* This centers the text *inside* the container */
+    height: 50px;
+    width: 220px;
+    border-radius: 11px;
+    padding-top: 5px;
+    background-color: #f78409;
+    margin: 0 auto 40px; /* Changed this line: 0 for top, auto for left/right, 40px for bottom */
+    padding-top: 10px;
+  /* cursor: pointer; */
+  
+}
+.view_all_container:hover{
+  background-color:#141414 ;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px  #1d1c1c(52, 152, 219, 0.4);
+}
+
+.view_all_link_bottom {
+  color: #f8f5f2;
+  font-weight: 600;
+  font-size: 1.1rem;
+  
+  
+}
+
+.view_all_link_bottom:hover {
+  text-decoration: underline;
+}
+
+/* ===== TOUR CARD ===== */
+.tour_card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tour_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card_image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card_content {
+  padding: 20px;
+}
+
+.card_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.card_title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-right: 10px;
+}
+
+.card_price {
+  background: #f97316;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.original_price {
+  text-decoration: line-through;
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-top: 2px;
+}
+
+/* .card_description {
+  color: #4b5563;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+} */
+
+.card_details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.card_duration {
+  display: flex;
+  align-items: center;
+  color: #4b5563;
+}
+
+.duration_icon {
+  margin-right: 5px;
+  width: 18px;
+  height: 18px;
+}
+
+.card_availability {
+  color: #10b981;
+  font-weight: 600;
+}
+
+/* .book_btn {
+  width: 100%;
+  background: #f97316;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+} */
+
+/* .book_btn:hover {
+  background: #ea580c;
+} */
+
+/* ===== SPECIAL INTEREST SECTION ===== */
+.special_interest_section {
+  padding: 60px 20px;
+  background-color: #f8fafc;
+  text-align: center;
+}
+
+
+
+/* .plus_icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+} */
+
+/* ===== FORM CONTAINER ===== */
+.form_container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form_title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+/* .close_btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6b7280;
+}
+
+.close-btn:hover {
+  color: #1f2937;
+}
+
+.close_icon {
+  width: 24px;
+  height: 24px;
+} */
+.allHome{
+  background-color:#FFFFFF ;
+}
+
+.container_top_content { /* You might need to add this rule if it doesn't exist already */
+  /* Assuming this is the parent div wrapping your button's container */
+  max-width: 800px; /* Adjust as per your layout needs */
+  margin: 0 auto; /* To center the container itself if it's block-level */
+  padding: 0 20px;
+  text-align: center; /* <<< Add this line to center its inline children */
+}
+.special_interest_btns {
+  background: #f97316;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.special_interest_btns button{
+  font-size: 18px;
+}
+
+.special_interest_btns:hover {
+  background: #141414;
+  color: #f8f5f2;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px  #1d1c1c(52, 152, 219, 0.4);
+}
+
+/* popular tour style  */
+.popular_tours .section_title.section_title_animated::after {
+  transform: scaleX(1);
+}
+
+
+.tours_grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 30px;
+justify-content: center;
+padding: 0 20px;
+}
+
+/* Animation for individual TourCard components */
+/* You will need to apply this class to the TourCard component itself,
+ or its wrapping div within the map. */
+/* For example, in TourCard.jsx, add className={classes.tour_card_animated} */
+.tour_card_animated {
+opacity: 0; /* Start hidden */
+transform: translateY(30px); /* Start slightly below */
+animation: fadeInSlideUp 0.7s ease-out forwards;
+}
+.tours_grid > div:nth-child(1) { animation-delay: 0.1s; }
+.tours_grid > div:nth-child(2) { animation-delay: 0.3s; }
+.tours_grid > div:nth-child(3) { animation-delay: 0.5s; }
+
+tourCard {
+  background-color: #fff;
+  border-radius: 12px; /* Softer rounded corners */
+  overflow: hidden; /* Important for image overflow if scaled */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Softer, more pronounced shadow */
+  transition: transform 0.4s ease-out, box-shadow 0.4s ease-out; /* Smooth transition for hover */
+  cursor: pointer; /* Indicate interactivity */
+  display: flex; /* Adjust if needed for internal layout */
+  flex-direction: column; /* Adjust if needed for internal layout */
+  text-align: center; /* Example alignment */
+}
+
+.tourCard:hover {
+  transform: translateY(-8px) scale(1.02); 
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.25); 
+}
+
+/* ... (Your existing CSS code) ... */
+
+/* Why Choose Us Section */
+.why_choose_us_section {
+  padding: 80px 20px; /* Adjust padding as needed */
+  background-color: #f8f9fa; /* Light background for the section */
+  text-align: center;
+}
+
+.why_choose_us_title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.why_choose_us_underline {
+  width: 50px; /* Adjust width of the orange underline */
+  height: 3px;
+  background-color: #F7921F; /* Orange color */
+  margin: 0 auto 50px auto; /* Center the underline and add space below */
+}
+
+.feature_cards_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 30px; /* Space between cards */
+  justify-content: center; /* Center cards if they don't fill the row */
+  max-width: 1200px; /* Limit overall width for the grid */
+  margin: 0 auto; /* Center the grid itself */
+}
+
+.feature_card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Soft shadow */
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content vertically */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #eee; /* Subtle border */
+}
+
+.feature_card:hover {
+  transform: translateY(-8px); /* Lift effect on hover */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* More pronounced shadow on hover */
+}
+
+.card_icon {
+  margin-bottom: 20px;
+  /* If using images as icons, style them here */
+  width: 60px; /* Adjust icon size */
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensure icon is not cropped */
+  filter: sepia(100%) saturate(2000%) hue-rotate(0deg) brightness(90%) contrast(100%); /* Example: make a grey icon orange */
+  /* You might need to adjust this filter or use actual orange icons */
+}
+
+
+.feature_card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.feature_card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive adjustments for this section */
+@media (max-width: 768px) {
+  .why_choose_us_section {
+    padding: 50px 15px;
+  }
+
+  .why_choose_us_title {
+    font-size: 1.8rem;
+  }
+
+  .feature_cards_grid {
+    grid-template-columns: 1fr; /* Stack cards on smaller screens */
+    gap: 20px;
+  }
+}
+

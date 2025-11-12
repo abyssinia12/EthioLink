@@ -1,0 +1,256 @@
+/* ReceptionDashboard.module.css */
+
+.container {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1rem;
+  background-color: #f3f4f6; /* match other dashboards */
+  min-height: 100vh;
+  color: #333;
+}
+
+.container h2 {
+  color: #1f2937;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.container p {
+  text-align: left;
+  margin-bottom: 1rem;
+  color: #6b7280;
+}
+
+/* Header bar to match Tour Officer header */
+.header {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  height: 72px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.notification_button {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #4b5563;
+}
+
+.notification_button:hover {
+  color: #f97316;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.notification_badge {
+  position: absolute;
+  top: -4px;
+  right: -6px;
+  background-color: #f97316;
+  color: white;
+  font-size: 10px;
+  width: 16px;
+  height: 16px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user_info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.user_icon {
+  width: 24px;
+  height: 24px;
+  color: #4b5563;
+}
+
+.user_name {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+/* Add Room Button */
+.container > button {
+  display: inline-flex;
+  margin: 0 0 1rem 0;
+  padding: 0.6rem 1.25rem;
+  background-color: #f97316; /* orange accent */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.container > button:hover {
+  background-color: #ea580c;
+  transform: translateY(-1px);
+}
+
+.container > button:active {
+  transform: translateY(0);
+}
+
+/* Room List */
+.roomList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+/* Room Card */
+.roomCard {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.roomCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.roomCard h3 {
+  color: #1f2937;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.roomCard p {
+  color: #666;
+  margin-bottom: 0.5rem;
+  text-align: left; /* Override center alignment from .container p */
+}
+
+.roomCard p:last-of-type {
+  margin-bottom: 1rem;
+}
+
+/* Button Group within Card */
+.buttonGroup {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+
+.buttonGroup button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  flex-grow: 1; /* Allow buttons to grow and fill space */
+  min-width: 100px; /* Ensure buttons don't get too small */
+}
+
+.buttonGroup button:nth-child(1) {
+  /* Edit button */
+  background-color: #fde68a;
+  color: #92400e;
+}
+
+.buttonGroup button:nth-child(1):hover {
+  background-color: #fcd34d;
+  transform: translateY(-1px);
+}
+
+.buttonGroup button:nth-child(2) {
+  /* Delete button */
+  background-color: #dc3545;
+  color: white;
+}
+
+.buttonGroup button:nth-child(2):hover {
+  background-color: #c82333;
+  transform: translateY(-1px);
+}
+
+.buttonGroup button:nth-child(3) {
+  /* View/Hide Bookings button */
+  background-color: #f97316;
+  color: white;
+}
+
+.buttonGroup button:nth-child(3):hover {
+  background-color: #ea580c;
+  transform: translateY(-1px);
+}
+
+/* RoomBookings component styling (optional, but good to consider if it's within this module) */
+/* You might want to create a separate CSS module for RoomBookings,
+   but if it's a small component, you can add styles here as well. */
+.roomBookingsContainer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.roomBookingsContainer h4 {
+  color: #0056b3;
+  margin-bottom: 1rem;
+}
+
+.roomBookingsContainer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.roomBookingsContainer li {
+  background-color: #f0f8ff;
+  border: 1px solid #cce5ff;
+  border-radius: 5px;
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.logoutButton {
+  background-color: #f7921f;
+  color: rgb(245, 240, 240);
+  border: none;
+  padding: 0.2rem 1rem;
+  font-size: 1.23rem;
+  border-radius: 8px;
+  cursor: pointer;
+  float: left;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.logoutButton:hover {
+  background-color: #1d1c1c;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(29, 28, 28, 0.4);
+}

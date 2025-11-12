@@ -1,0 +1,192 @@
+.hero_img{
+  position: relative;
+}
+.hero_img::before{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(225, 225, 225, 0),
+    rgba(255, 255, 255)
+
+  );
+}
+.img{
+  height: 750px;
+  object-fit: cover;
+}
+.overlay{
+ 
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: white;
+}
+
+.hero_title {
+ 
+  padding-top: 250px;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.hero_title_highlight {
+  color: #F7921F;
+}
+
+.hero_subtitle {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #fff;
+}
+
+.hero_cta_container {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.hero_primary_cta {
+  background-color: #F7921F;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.55rem;
+  border: none;
+  cursor: pointer;
+}
+
+.hero_primary_cta:hover {
+  background-color: #141414;
+  color: #fff;
+}
+
+.hero_secondary_cta {
+  background-color: transparent;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.55rem;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.hero_secondary_cta:hover{
+  font-weight: bolder;
+  background-color: #141414;
+  color: #fff;
+  
+}
+
+/* Container for both carousel and static text */
+.carouselContainerWrapper {
+  position: relative; /* This is key! It establishes a positioning context for its children */
+  width: 100%; /* Or your desired width */
+  height: 600px; /* Or your desired height for the carousel area */
+  overflow: hidden; /* Ensures content outside this wrapper is clipped */
+}
+
+/* Styles for the individual image within the carousel */
+.slideImageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure image fills its container */
+}
+
+.slideImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures images cover the area without distortion */
+}
+
+/* Styles for the static text overlay */
+.staticTextOverlay {
+  position: absolute; 
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  z-index: 10; 
+  color: white;
+  text-align: center;
+  width: 80%; 
+  padding-bottom: 150px;
+}
+
+.hero_title {
+  font-size: 3em; /* Example size */
+  margin-bottom: 10px;
+}
+
+.hero_title_highlight {
+  padding-left: 10px;
+  color: #ffda47; /* Example highlight color */
+}
+
+.hero_subtitle {
+  font-size: 1.2em; /* Example size */
+  line-height: 1.5;
+}
+
+/* You might need to adjust default carousel styles if they interfere */
+/* For example, to ensure the carousel itself doesn't have extra padding */
+.carousel .slide {
+  background: transparent !important; /* Ensure no background interferes */
+}
+/* 
+.slide_wrapper {
+  position: relative;
+}
+
+.img {
+  width: 100%;
+  height: 600px; 
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  z-index: 2;
+}
+
+.hero_title {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  color: bisque;
+}
+
+.hero_title_highlight {
+  color: #F7921F;
+}
+
+.hero_subtitle {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #fff;
+} */

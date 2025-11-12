@@ -1,0 +1,87 @@
+/* HeroSection.css */
+.hero_container {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  /* background-image: url('../../../public/Banner.jpg'); */
+}
+
+.hero_overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: white;
+}
+
+.hero_title {
+  /* margin-top: 30px; */
+  padding-top: 250px;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  color: bisque;
+}
+
+.hero_title_highlight {
+  color: #F7921F;
+}
+
+.hero_subtitle {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #fff;
+}
+
+.hero_cta_container {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.hero_primary_cta {
+  background-color: #F7921F;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.55rem;
+  border: none;
+  cursor: pointer;
+}
+
+.hero_primary_cta:hover {
+  background-color: #141414;
+  color: #fff;
+}
+
+.hero_secondary_cta {
+  background-color: transparent;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.55rem;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.hero_secondary_cta:hover{
+  font-weight: bolder;
+  background-color: #141414;
+  color: #fff;
+  /* color: #141414; */
+}
+
+@media (min-width: 768px) {
+  .hero_title {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
