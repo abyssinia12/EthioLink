@@ -22,11 +22,15 @@ const BookingForm = ({
         onChange={(e) => setFirstName(e.target.value)}
         className={classes.carcard__input}
       />
-    
+      <input
+        type="text"
+        placeholder="Last Name"
+        value={lastName}
+        onChange={(e) => setLastName(e.target.value)}
+        className={classes.carcard__input}
+      />
       
-      <button onClick={handlePay} className={classes.carcard__button}>
-        Pay
-      </button>
+     
     </div>
   );
 };
