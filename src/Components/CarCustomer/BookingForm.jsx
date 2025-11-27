@@ -30,7 +30,9 @@ const BookingForm = ({
         className={classes.carcard__input}
       />
       
-      
+      <button onClick={handlePay} className={classes.carcard__button}>
+        Pay
+      </button>
     </div>
   );
 };
