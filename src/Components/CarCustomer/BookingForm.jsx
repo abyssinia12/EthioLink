@@ -15,7 +15,13 @@ const BookingForm = ({
   return (
     
     <div className={classes.car_card__form}>
-      
+      <input
+        type="text"
+        placeholder="First Name"
+        value={firstName}
+        onChange={(e) => setFirstName(e.target.value)}
+        className={classes.carcard__input}
+      />
       <input
         type="text"
         placeholder="Last Name"
@@ -30,9 +36,7 @@ const BookingForm = ({
         onChange={(e) => setEmail(e.target.value)}
         className={classes.carcard__input}
       />
-      <button onClick={handlePay} className={classes.carcard__button}>
-        Pay
-      </button>
+     
     </div>
   );
 };
