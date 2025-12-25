@@ -141,7 +141,7 @@ export default function Carasul() {
             {t("carousel.highlight")}
           </span>
         </h1>
-        
+        <p className={classes.hero_subtitle}>{t("carousel.subtitle")}</p>
       </div>
     </div>
   );
