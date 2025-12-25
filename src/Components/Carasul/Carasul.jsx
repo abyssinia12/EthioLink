@@ -123,7 +123,11 @@ export default function Carasul() {
       >
         {imgg.map((url, index) => (
           <div key={index} className={classes.slideImageWrapper}>
-           
+            <img
+              src={url}
+              alt={`Slide ${index + 1}`}
+              className={classes.slideImage}
+            />
           </div>
         ))}
       </Carousel>
@@ -137,7 +141,7 @@ export default function Carasul() {
             {t("carousel.highlight")}
           </span>
         </h1>
-        <p className={classes.hero_subtitle}>{t("carousel.subtitle")}</p>
+        
       </div>
     </div>
   );
