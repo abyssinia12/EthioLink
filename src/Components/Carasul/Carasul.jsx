@@ -123,18 +123,20 @@ export default function Carasul() {
       >
         {imgg.map((url, index) => (
           <div key={index} className={classes.slideImageWrapper}>
-            <img
-              src={url}
-              alt={`Slide ${index + 1}`}
-              className={classes.slideImage}
-            />
+           
           </div>
         ))}
       </Carousel>
 
       {/* Static text overlay - translated */}
       <div className={classes.staticTextOverlay}>
-        
+        <h1 className={classes.hero_title}>
+          {" "}
+          {t("carousel.title")}{" "}
+          <span className={classes.hero_title_highlight}>
+            {t("carousel.highlight")}
+          </span>
+        </h1>
         <p className={classes.hero_subtitle}>{t("carousel.subtitle")}</p>
       </div>
     </div>
