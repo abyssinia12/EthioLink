@@ -134,13 +134,7 @@ export default function Carasul() {
 
       {/* Static text overlay - translated */}
       <div className={classes.staticTextOverlay}>
-        <h1 className={classes.hero_title}>
-          {" "}
-          {t("carousel.title")}{" "}
-          <span className={classes.hero_title_highlight}>
-            {t("carousel.highlight")}
-          </span>
-        </h1>
+        
         <p className={classes.hero_subtitle}>{t("carousel.subtitle")}</p>
       </div>
     </div>
